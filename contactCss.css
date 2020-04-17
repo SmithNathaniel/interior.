@@ -1,0 +1,259 @@
+/*
+CSS Credit: http://www.templatemo.com/
+*/
+
+html, body {
+
+	height: 100% ;
+	margin: 0;
+	font-family: "Yu Gothic",sans-serif;
+
+}
+.bg {
+/* The image used */
+
+/* Full height */
+height: 100%;
+background: linear-gradient(to bottom,rgba(0,0,0,.3),rgba(0,0,0,.3)), url("desk.jpg");
+
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+/* Menu Section */
+
+#templatemo_menu_panel {
+	width:100%;
+	height: 65px;
+
+	background-color: rgba(255,255, 255, .6);
+	float:left;
+}
+
+#templatemo_menu_panel #templatemo_menu_section {
+	width: 700px;
+	height: 35px;
+	margin:0 auto;
+	background-color:transparent;
+	padding: 0 0 0 25px;
+
+}
+
+ul {
+	
+	padding: 8px;
+	display: flex;
+}
+ul li {
+	list-style: none;
+	padding: 0px 35px;
+}
+ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: black;
+	position: relative;
+	padding: 5px;
+	}
+
+ul li a:hover{ 
+	color:black;
+}
+
+ul li a span:first-child:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-top: 2px solid #A15339;
+	border-left: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:first-child:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-top: 2px solid #A15339;
+	border-right: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:last-child:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-bottom: 2px solid #A15339;
+	border-left: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:last-child:after{ 
+	content: '';
+	position: absolute;
+	bottom: 0;
+	
+	right: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-bottom: 2px solid #A15339;
+	border-right: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}  
+ul li a:hover span:first-child::before{
+	top : -6px;
+	left: -6px;
+	opacity: 1;
+}
+ul li a:hover span:first-child::after{
+	top : -6px;
+	right: -6px;
+	opacity: 1;
+}
+ul li a:hover span:last-child::before{
+	bottom: -6px;
+	left: -6px;
+	opacity: 1;
+}
+ul li a:hover span:last-child::after{
+	bottom : -6px;
+	right: -6px;
+	opacity: 1;
+}
+
+.contact-section h1{
+	text-align: center;
+	color:white;
+	background-color: rgba(255,255,255,.2);
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	font-family: "Yu Gothic",sans-serif;
+	font-weight:bold;
+	opacity: 1; /* Firefox */
+  }
+  
+  
+  .contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 30px 20px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 10px;
+	color: black;
+  }
+  .social{
+	  background-color:rgba(0,0,0,.0);
+	padding: 8px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	  width: 200px;
+	 margin-left: 575px;
+  }
+  
+  .contact-form-text{
+	display: block;
+	width: 95%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	
+	border: 0;
+	background: rgba(255, 255 ,255 , .8);
+	padding: 10px 10px;
+	outline: none;
+	border-radius: 5px;
+	color: black;
+	transition: 0.5s;
+
+  }
+  .contact-form-text:focus{
+	box-shadow: 0 0 5px 4px #A15339;
+  }
+  textarea.contact-form-text{
+	resize: none;
+	height: 120px;
+  }
+  .contact-form-btn{
+	float: right;
+	border: 0;
+	background: white;
+	color: #A15339;
+	font-weight: bold;
+
+	font-size: 12px;
+	font-family: "Yu Gothic",sans-serif;
+	padding: 12px 40px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+	background: #A15339;
+	color: white;
+  }
+  .fa {
+	padding: 15px;
+	font-size: 30px;
+	width: 15px;
+	text-align: center;
+	background-color: rgba(255,255,255,.7);
+	text-decoration: none;
+	border: white;
+	border-radius: 50%;
+  }
+  
+  .fa:hover {
+	 
+	  background-color:white;
+  }
+  
+  .fa-facebook {
+	/* background: #3B5998; */
+	color: #3B5998;
+  }
+  
+  .fa-twitter {
+	/* background: #55ACEE; */
+	color: #55ACEE;
+  }
+  
+
+  .fa-linkedin {
+	/* background: #007bb5; */
+	color: #007bb5;
+  }
+  
+  .fa-youtube {
+	/* background: #bb0000; */
+	color: #bb0000;
+  }
+  
+  .fa-instagram {
+	/* background: #125688; */
+	color:  #125688;
+  }

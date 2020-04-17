@@ -1,0 +1,172 @@
+/*
+CSS Credit: http://www.templatemo.com/
+*/
+
+html, body {
+
+	height: 100% ;
+	margin: 0;
+	font-family: "Yu Gothic",sans-serif;
+
+}
+.bg {
+/* The image used */
+background-image: url("apart.jpg");
+
+/* Full height */
+height: 100%;
+background: linear-gradient(to bottom,rgba(0,0,0,.0),rgba(0,0,0,.1)), url("apart.jpg");
+
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+/* Menu Section */
+
+
+#templatemo_menu_panel {
+	width:100%;
+	height: 65px;
+
+	background-color: rgba(255,255, 255, .5);
+	float:left;
+}
+
+#templatemo_menu_panel #templatemo_menu_section {
+	width: 700px;
+	height: 35px;
+	margin:0 auto;
+	background-color:transparent;
+	padding: 0 0 0 25px;
+
+}
+
+ul {
+	
+	padding: 8px;
+	display: flex;
+}
+ul li {
+	list-style: none;
+	padding: 0px 35px;
+}
+ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: black;
+	position: relative;
+	padding: 5px;
+	}
+
+ul li a:hover{ 
+	color:black;
+}
+
+ul li a span:first-child:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-top: 2px solid #A15339;
+	border-left: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:first-child:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-top: 2px solid #A15339;
+	border-right: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:last-child:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-bottom: 2px solid #A15339;
+	border-left: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}
+ul li a span:last-child:after{ 
+	content: '';
+	position: absolute;
+	bottom: 0;
+	
+	right: 0;
+	width: 8px;
+	height: 8px;
+	background: transparent;
+	border-bottom: 2px solid #A15339;
+	border-right: 2px solid #A15339;
+	transition: .2s;
+	opacity: 0 ;
+}  
+ul li a:hover span:first-child::before{
+	top : -6px;
+	left: -6px;
+	opacity: 1;
+}
+ul li a:hover span:first-child::after{
+	top : -6px;
+	right: -6px;
+	opacity: 1;
+}
+ul li a:hover span:last-child::before{
+	bottom: -6px;
+	left: -6px;
+	opacity: 1;
+}
+ul li a:hover span:last-child::after{
+	bottom : -6px;
+	right: -6px;
+	opacity: 1;
+}
+
+h1{
+  position : absolute;
+  top: 0%;
+  left : 3%;
+	font-weight: lighter;
+  font-family:  "Yu Gothic",sans-serif ;
+  color:#A15339;
+  opacity: 0.8;
+  font-size : 102px;
+
+}
+.container{
+	position: absolute;
+	top: 32%;
+	left: 9.5%;
+	width: 1100px;
+	height: 250px;
+	background-color: rgba(245,245, 245, .6);
+	box-sizing: border-box;
+ box-shadow: 2px 1px 1px 1px rgba(255,255,255,.6);
+
+
+}
